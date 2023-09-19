@@ -1,0 +1,16 @@
+FROM pytorch/pytorch
+
+RUN pip install --upgrade pip
+RUN pip install -U scikit-learn
+RUN pip install Pillow
+RUN pip install jupyterlab
+RUN pip install tqdm
+RUN pip install matplotlib
+RUN pip install transformers
+RUN pip install datasets
+RUN pip install datasets[audio]
+RUN pip install imageio
+RUN pip install seaborn
+
+# Set working directory
+WORKDIR /app

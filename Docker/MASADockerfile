@@ -1,0 +1,24 @@
+FROM tensorflow/tensorflow:latest-gpu
+
+RUN pip install --upgrade pip
+RUN pip install -U scikit-learn
+RUN pip install Pillow
+RUN pip install jupyterlab
+RUN pip install tqdm
+RUN pip install matplotlib
+RUN pip install --upgrade "jax[cuda11_pip]" -f https://storage.googleapis.com/jax-releases/jax_cuda_releases.html
+RUN pip install transformers
+RUN apt-get update && apt-get install ffmpeg libsm6 libxext6  -y
+RUN pip install opencv-python
+RUN pip install vit-keras
+RUN pip install tfswin
+RUN pip install librosa
+RUN pip install --upgrade tensorflow-hub
+RUN pip install seaborn
+RUN pip install sounddevice
+RUN apt-get install libportaudio2
+RUN pip install SpeechRecognition
+RUN pip install PyWavelets
+
+# Set working directory
+WORKDIR /app
