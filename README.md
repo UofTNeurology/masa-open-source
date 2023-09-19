@@ -81,6 +81,32 @@ output_type = 'mel'
 
 After configuring, run `main.py` to start the processing. This will create the dataset that will be used in the deep learning notebooks included in this repository.
 
+### 3. Organize Image Outputs In The Following Structure:
+- Dataset Parent Directory
+  - Train
+    - Pass
+      - Participant_1
+        - spectrogram1.png
+        - spectrogram2.png
+        - ...
+      - Participant_2
+        - spectrogram1.png
+        - spectrogram2.png
+    - Fail
+      - Participant_3
+        - spectrogram1.png
+        - spectrogram2.png
+  - Test
+    - Pass
+      - Participant_5
+        - spectrogram1.png
+        - spectrogram2.png
+    - Fail
+      - Participant_7
+        - spectrogram1.png
+        - spectrogram2.png
+
+
 
 ## Contact
 Please feel free to raise an issue for any queries, suggestions, or discussions.
