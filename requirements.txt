@@ -2,7 +2,7 @@ appdirs==1.4.4
 audioread==2.1.9
 backports.zoneinfo==0.2.1
 beautifulsoup4==4.11.1
-certifi==2022.5.18.1
+certifi==2023.7.22
 cffi==1.15.0
 charset-normalizer==2.0.12
 cycler==0.11.0
