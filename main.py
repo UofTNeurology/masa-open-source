@@ -1,6 +1,5 @@
 from AudioTools.LoadAudio import LoadAudio
 from AudioTools.ProcessAudio import ProcessAudio,save_mels_to_file, save_superlets_to_file
-# from AudioTools.superlets.superlets.superlets import superlet
 import matplotlib.pyplot as plt
 import numpy as np
 import os, sys
@@ -86,22 +85,7 @@ for file in files:
                 pass_sound_files_lens.append(epoch.duration)
                 label = "Pass"
             
-            if output_type == "superlet":
-                '''
-                superlets = []
-                Process1 = ProcessAudio(epoch.data, sampling_rate=epoch.sampling_rate, n_fft=2048,
-                                        n_mels=512)
-                for (i, (base_cycle, min_order, max_order)) in enumerate(zip([3, 5, 1], [1, 1, 5], [30, 30, 40])):
-                    Process1.compute_superlet(base_cycle=base_cycle, min_order=min_order, max_order=max_order)
-                    superlets.append(Process1.superlet_normalized)
-                    
-                save_superlets_to_file(file_dir=output_path + label + "/",
-                                             name=file['name'][:-4] + "_" + epoch.name, superlets = superlets, format='png')
-                '''
-                Process1 = ProcessAudio(epoch.data, sampling_rate=epoch.sampling_rate, n_fft=2048, n_mels=512)
-                Process1.save_result_to_file(file_dir=output_path + label + "/",
-                                                name=file['name'][:-4] + "_" + epoch.name, output_type=output_type)
-            elif output_type != "bw_mel":
+            if output_type != "bw_mel":
                 Process1 = ProcessAudio(epoch.data, sampling_rate=epoch.sampling_rate, n_fft=2048,
                                         n_mels=512)
                 Process1.save_result_to_file(file_dir=output_path + label + "/",
@@ -121,8 +105,6 @@ for file in files:
                 save_mels_to_file(file_dir=output_path + label + "/",
                                                      name=file['name'][:-4] + "_" + epoch.name, mel1=Mel1.norm_log_mel,
                                                      mel2=Mel2.norm_log_mel, mel3=Mel3.norm_log_mel, format='png')
-
-
     else:
         Process1 = ProcessAudio(audio.audio_sample.data, sampling_rate=audio.audio_sample.sampling_rate)
         if (file['name'].find("- F-") > 0) or (file['name'].find("-F-") > 0) or (file['name'].find("- F -") > 0) or \
