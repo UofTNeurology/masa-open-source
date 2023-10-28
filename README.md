@@ -66,7 +66,7 @@ To use the toolkit, you will need to edit the `main.py` file. Here are the prima
 Edit the following lines to specify the directory containing the `.wav` files you wish to process and where the output should be saved:
 ```python
 path = "Audio Data/For Processing"
-output_path = "Audio Data/Superlet Outputs/"
+output_path = "Audio Data/Outputs/"
 ```
 
 ### 2. Audio Processing Parameters
