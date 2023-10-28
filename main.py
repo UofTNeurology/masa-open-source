@@ -10,7 +10,7 @@ sys.path.append(os.path.join(os.path.dirname(__file__), "AudioTools"))
 
 # Select directory and load all files in the directory #
 path = "Audio Data/For Processing"
-output_path = "Audio Data/Superlet Outputs/"
+output_path = "Audio Data/Outputs/"
 files = []
 with os.scandir(path) as it:
     for entry in it:
