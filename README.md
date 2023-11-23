@@ -3,11 +3,12 @@
 ## Project Description
 MASA (Machine Learning Assisted Swallowing Assessment) is an innovative project designed to leverage the power of machine learning (ML) to transform the way swallowing assessments are performed, with an aim to improve quality of care. The primary goal of this project is to harness ML capabilities in spectral analysis of human voice during swallowing assessments to classify the assessment state as per the screening standard (at our site it is TOR-BSST&copy;, however many other screening tests are used at other centers), a recognized tool for assessing swallowing disorders particularly after acute stroke.
 
-**Please also note the [MASA supplementary material](https://github.com/UofTNeurology/masa-open-source/blob/main/MASA%20supplementary%20material.pdf) methods accompanying our paper.**
-
 This project involves the application of advanced techniques such as Convolutional Neural Networks (CNNs) initially, with plans to expand to Visual Transformers (ViT) in the future. The use of these cutting-edge technologies is aimed at capturing and understanding the intricate nuances of human voice during swallowing assessments that are potentially missed in traditional assessments.
 
 The algorithms developed under MASA aim to bring efficiency, accuracy and scalability in the assessment process, potentially enabling clinicians to make more informed decisions regarding patient treatment and management.
+
+## Supplementary Methods Section
+Please also note the [MASA supplementary material](https://github.com/UofTNeurology/masa-open-source/blob/main/MASA%20supplementary%20material.pdf) methods accompanying our paper.
 
 ## Project Objectives
 Develop a robust machine learning model capable of performing spectral analysis on human voice during swallowing assessments.
@@ -19,9 +20,7 @@ Refer to the Getting Started Guide for instructions on how to install, run, and 
 
 ## How to Get Started
 
-
 This repository uses Docker containers to run the machine learning notebooks. Prior to starting, we recommend installing and updating Docker to the latest version. If you are using Linux, make sure you set up the [nvidia container toolkit](https://docs.nvidia.com/datacenter/cloud-native/container-toolkit/latest/install-guide.html) to be able to use GPU acceleration. This repository was tested on Windows 11 and Ubuntu 22.04.
-
 
 You can use the [Makefile](Makefile) to automate the process of building and running the notebooks. 
 
