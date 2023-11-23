@@ -8,7 +8,7 @@ This project involves the application of advanced techniques such as Convolution
 The algorithms developed under MASA aim to bring efficiency, accuracy and scalability in the assessment process, potentially enabling clinicians to make more informed decisions regarding patient treatment and management.
 
 ## Supplementary Methods Section
-Please also note the [MASA supplementary material](https://github.com/UofTNeurology/masa-open-source/blob/main/MASA%20supplementary%20material.pdf) methods accompanying our paper.
+Please also note the [MASA supplementary material](https://github.com/UofTNeurology/masa-open-source/blob/main/MASA%20supplementary%20material.pdf) methods accompanying our publication in [*Frontiers in Neuroscience*](https://www.frontiersin.org/articles/10.3389/fnins.2023.1302132/abstract).
 
 ## Project Objectives
 Develop a robust machine learning model capable of performing spectral analysis on human voice during swallowing assessments.
