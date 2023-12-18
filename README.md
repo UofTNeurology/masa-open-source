@@ -108,12 +108,12 @@ Please feel free to raise an issue for any queries, suggestions, or discussions.
 
 This project is a stepping stone towards improving the quality of patient care by leveraging the potential of AI/machine learning in neurologic care. Specifically, we are starting with audio as a biomarker for swallowing in stroke patients. We welcome you to join us on this exciting journey.
 
-* Lab Members (continuing and joining):
-  * R. Saab, U of T Med, AI4QI in Stroke, U of T, Med, Sunnybrook Research Institute
-  * Dr. A. Balachandar, Neurology, U of T, ML4QI in Stroke
-  * E. Nashnoush, MSc, U of T Data Science, Datathon co-founder, T-CAIREM, Health Quality Ontario, Sunnybrook Research Institute
-  * H. Mahdi, Western University, Med, Sunnybrook Research Institute            
-  * R. Dagli, CS2, U of T
+* Lab Members (continuing and joining, these are affiliations, see disclaimer):
+  * Rami Saab, University of Toronto Medicine, AI4QI in Stroke, University of Toronto, Med, Sunnybrook Research Institute
+  * Dr. Arjun Balachandar, Neurology, University of Toronto, ML4QI in Stroke
+  * Eptehal Nashnoush, MSc, University of Toronto Data Science, Datathon co-founder, T-CAIREM, Health Quality Ontario, Sunnybrook Research Institute
+  * Hamza Mahdi, Western University, Medicine, Sunnybrook Research Institute            
+  * Rishit Dagli, Computer Science, University of Toronto
 
 ## Disclaimer
-This GitHub repository is for educational purposes only and does not represent expert medical judgment or assessment. The tools and information provided herein are not intended for clinical use and should not be relied upon for medical decision-making. No duty of care is assumed by the contributors, and all individuals associated with this project are absolved of any medical-legal burden. The views and work expressed in this repository do not reflect the official stance of any affiliated institutions or hospitals where we work or study. Use at your own risk.
+This GitHub repository is for educational purposes only and does not represent expert medical judgment or assessment. The tools and information provided herein are not intended for clinical use and should not be relied upon for medical decision-making. No duty of care is assumed by the contributors, and all individuals associated with this project are absolved of any medical-legal burden. The views and work expressed in this repository do not reflect the official stance of any affiliated academic/other institutions or hospitals where we work or study. Use at your own risk. 
