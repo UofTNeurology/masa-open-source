@@ -8,7 +8,7 @@ This project involves the application of advanced techniques such as Convolution
 The algorithms developed under MASA aim to bring efficiency, accuracy and scalability in the assessment process, potentially enabling clinicians to make more informed decisions regarding patient treatment and management.
 
 ## Supplementary Methods Section
-Please also note the [MASA supplementary material](https://github.com/UofTNeurology/masa-open-source/blob/main/MASA%20supplementary%20material.pdf) methods accompanying our publication in [*Frontiers in Neuroscience*](https://www.frontiersin.org/articles/10.3389/fnins.2023.1302132/abstract).
+Please also note the [MASA supplementary material](https://github.com/UofTNeurology/masa-open-source/blob/main/MASA%20supplementary%20material.pdf) methods accompanying our publication in [*Frontiers in Neuroscience*](https://www.frontiersin.org/articles/10.3389/fnins.2023.1302132/full).
 
 ## Project Objectives
 Develop a robust machine learning model capable of performing spectral analysis on human voice during swallowing assessments.
@@ -35,15 +35,11 @@ make run-tensorflow
 ```
 Please note the docker images will automatically start jupyter lab servers as this repository mainly relies on python notebooks for the ML experiments. You can similarly run the Pytorch docker images.
 
-
 After running the Docker Image, open Jupyter Lab in your browser and go the [sample base notebook](Notebooks/Base%20(Single%20Network)-Densenet.ipynb) 
-
 
 If you have prepared the dataset and placed it under the Audio Data folder (see the next section on preparing the dataset), you should be able to simply run the CNN notebook without modifications.
 
-
 ## Preparing the Dataset
-
 
 This repository provides preprocessing code to convert raw audio signals to spectrogram images.
 ### Introduction
@@ -107,9 +103,17 @@ After configuring, run `main.py` to start the processing. This will create the d
         - spectrogram1.png
         - spectrogram2.png
 
-
-
 ## Contact
 Please feel free to raise an issue for any queries, suggestions, or discussions.
 
-This project is a stepping stone towards improving the quality of patient care by leveraging the potential of AI and machine learning in healthcare. We welcome you to join us on this exciting journey!
+This project is a stepping stone towards improving the quality of patient care by leveraging the potential of AI/machine learning in neurologic care. Specifically, we are starting with audio as a biomarker for swallowing in stroke patients. We welcome you to join us on this exciting journey.
+
+* Lab Members (continuing and joining):
+  * R. Saab, U of T Med, AI4QI in Stroke, U of T, Med, Sunnybrook Research Institute
+  * Dr. A. Balachandar, Neurology, U of T, ML4QI in Stroke
+  * E. Nashnoush, MSc, U of T Data Science, Datathon co-founder, T-CAIREM, Health Quality Ontario, Sunnybrook Research Institute
+  * H. Mahdi, Western University, Med, Sunnybrook Research Institute            
+  * R. Dagli, CS2, U of T
+
+## Disclaimer
+This GitHub repository is for educational purposes only and does not represent expert medical judgment or assessment. The tools and information provided herein are not intended for clinical use and should not be relied upon for medical decision-making. No duty of care is assumed by the contributors, and all individuals associated with this project are absolved of any medical-legal burden. The views and work expressed in this repository do not reflect the official stance of any affiliated institutions or hospitals where we work or study. Use at your own risk.
