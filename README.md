@@ -1,5 +1,7 @@
 # MASA: Machine Learning Assisted Swallowing Assessment
 
+_Last updated: 2026-07-11_
+
 ## Project Description
 MASA (Machine Learning Assisted Swallowing Assessment) is an innovative project designed to leverage the power of machine learning (ML) to transform the way swallowing assessments are performed, with an aim to improve quality of care. The primary goal of this project is to harness ML capabilities in spectral analysis of human voice during swallowing assessments to classify the assessment state as per the screening standard (at our site it is TOR-BSST&copy;, however many other screening tests are used at other centers), a recognized tool for assessing swallowing disorders particularly after acute stroke.
 
