@@ -56,6 +56,7 @@ The Audio Processing Toolkit is designed to facilitate the loading, processing, 
 ```bash
 pip install -r requirements.txt
 ```
+**Security note:** `soupsieve` is pinned to `2.8.4` to address [CVE-2026-49477](https://github.com/advisories/GHSA-836r-79rf-4m37), a ReDoS vulnerability in versions prior to 2.8.4. Make sure to reinstall dependencies with `pip install -r requirements.txt` if you have an older environment.
 ### Usage
 To use the toolkit, you will need to edit the `main.py` file. Here are the primary areas you might want to customize:
 

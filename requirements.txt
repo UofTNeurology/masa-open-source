@@ -42,7 +42,7 @@ simpleaudio==1.0.4
 six==1.16.0
 sounddevice==0.4.4
 SoundFile==0.10.3.post1
-soupsieve==2.3.2.post1
+soupsieve==2.8.4
 SpeechRecognition==3.8.1
 threadpoolctl==3.1.0
 typing_extensions==4.2.0
