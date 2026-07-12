@@ -1,5 +1,7 @@
 # MASA: Machine Learning Assisted Swallowing Assessment
 
+_Last updated: 2026-07-11_
+
 ## Project Description
 MASA (Machine Learning Assisted Swallowing Assessment) is an innovative project designed to leverage the power of machine learning (ML) to transform the way swallowing assessments are performed, with an aim to improve quality of care. The primary goal of this project is to harness ML capabilities in spectral analysis of human voice during swallowing assessments to classify the assessment state as per the screening standard (at our site it is TOR-BSST&copy;, however many other screening tests are used at other centers), a recognized tool for assessing swallowing disorders particularly after acute stroke.
 
@@ -56,7 +58,12 @@ The Audio Processing Toolkit is designed to facilitate the loading, processing, 
 ```bash
 pip install -r requirements.txt
 ```
-**Security note:** `soupsieve` is pinned to `2.8.4` to address [CVE-2026-49477](https://github.com/advisories/GHSA-836r-79rf-4m37), a ReDoS vulnerability in versions prior to 2.8.4. Make sure to reinstall dependencies with `pip install -r requirements.txt` if you have an older environment.
+**Security note:** All known Dependabot alerts on `requirements.txt` have been resolved as of 2026-07-11:
+- `soupsieve` bumped to `2.8.4` ([GHSA-836r-79rf-4m37](https://github.com/advisories/GHSA-836r-79rf-4m37), [GHSA-2wc2-fm75-p42x](https://github.com/advisories/GHSA-2wc2-fm75-p42x))
+- `certifi`, `idna`, `fonttools`, `urllib3`, `requests`, `Pillow`, `scikit-learn` bumped to their patched versions (see `requirements.txt` and commit history for details)
+- `Js2Py`, `pyjsparser`, and `pipwin` removed — `Js2Py` had an unpatched RCE ([GHSA-h95x-26f3-88hr](https://github.com/advisories/GHSA-h95x-26f3-88hr)) and none of the three were used by this project's code
+
+This project now requires **Python 3.10** (`requests`, `urllib3`, and `Pillow` all raised their minimum Python version; `numba`/`llvmlite` cap at `<3.11`). Make sure to reinstall dependencies with `pip install -r requirements.txt` if you have an older environment.
 ### Usage
 To use the toolkit, you will need to edit the `main.py` file. Here are the primary areas you might want to customize:
 
